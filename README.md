@@ -4,7 +4,7 @@
 
 Agora is a library of voting algorithms like `Moore's`, `Oklahoma` , `Borda` , `IRV` etc. Some of these voting algorithms are already implemented by AOSSIE in a centralized manner using Scala as their backend. Our vision is to take these algorithms on a decentralized platform, so that, crucial votes of the voters could not be tampered with by admins, hackers, or anyone with access to the database. Blockchain technology would make the ballots immutable and hence more secure.
 
-## Tech Stack 
+## Tech Stack
 
 - ### Backend
 
@@ -35,9 +35,11 @@ Here's a refined version of the development guide:
 ```bash
 git clone https://github.com/AOSSIE-Org/Agora-Blockchain
 ```
-### Option 1: Docker Setup 
+
+### Option 1: Docker Setup
 
 1. **Clone the Repository**:
+
    ```bash
    git clone https://github.com/AOSSIE-Org/Agora-Blockchain
    cd Agora-Blockchain
@@ -46,6 +48,7 @@ git clone https://github.com/AOSSIE-Org/Agora-Blockchain
 2. **Set up Environment Variables**:
 
    Create `.env.local` in the `blockchain` directory:
+
    ```
    PRIVATE_KEY=<your_private_key>
    RPC_URL_SEPOLIA=<your_sepolia_rpc_url>
@@ -54,11 +57,13 @@ git clone https://github.com/AOSSIE-Org/Agora-Blockchain
    ```
 
    Create `.env.local` in the `client` directory:
+
    ```
    NEXT_PUBLIC_PINATA_JWT=<your_pinata_jwt>
    ```
 
 3. **Run with Docker Compose**:
+
    ```bash
    docker-compose up --build
    ```
@@ -70,7 +75,9 @@ git clone https://github.com/AOSSIE-Org/Agora-Blockchain
 The application will automatically reload when you make changes to the source code.
 
 ### Option 2: Manual Setup
+
 ## Backend
+
 1. **Navigate to the Blockchain Directory**:
 
    ```bash
@@ -126,6 +133,9 @@ The application will automatically reload when you make changes to the source co
 4. **Create an `.env.local` file** with the following environment variables:
 
    ```bash
+   NEXT_PUBLIC_SEPOLIA_RPC_URL=<your_sepolia_rpc_url>
+   NEXT_PUBLIC_FUJI_RPC_URL=<your_fuji_rpc_url>
+   NEXT_PUBLIC_AMOY_RPC_URL=<your_amoy_rpc_url>
    NEXT_PUBLIC_PINATA_JWT=<your_pinata_jwt>
    ```
 
