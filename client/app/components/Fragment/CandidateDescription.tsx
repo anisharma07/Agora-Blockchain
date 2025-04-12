@@ -6,7 +6,6 @@ const CandidateDescription = ({ IpfsHash }: { IpfsHash: String }) => {
     name: "",
     description: "",
   });
-
   useEffect(() => {
     const getIpfsFile = async () => {
       const res = await fetchFileFromIPFS(IpfsHash);
